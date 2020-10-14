@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="./assets/svg/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Fuel Swap</title>
+</head>
+
+<body>
+    <header class="header ">
+        <a href="#home" class="logo">
+            <img src="./assets//svg//logo.svg" alt="Fuel Swap Logo">
+        </a>
+        <nav class="navigation">
+            <a href="#home" class="nav__item">Home</a>
+            <a href="#fuels" class="nav__item">Fuels</a>
+            <a href="#socials" class="nav__item">Socials</a>
+            <button class="unlock__button">Unlock NOW</button>
+        </nav>
+    </header>
+    <div class="content__wrapper" id="home">
+        <div class="heading">
+            <img src="./assets//svg//fuel_level.svg" alt="Fuel Level" class="heading__icon">
+            <p class="heading__text">
+                Introduce farming 2.0 by fueling
+            </p>
+        </div>
+        <div class="boxes">
+            <div class="fuel__level__box">
+                <div class="box__title__section">
+                    <img src="./assets//svg//fuel.svg" alt="fuel" class="box__icon">
+                    <p class="box__title">Fuel Level</p>
+                </div>
+                <p class="box__value">00.00000000</p>
+                <div class="box__info">
+                    <div>Pending Fuels</div>
+                    <div>00.000</div>
+                </div>
+            </div>
+            <div class="total__supply__box">
+                <div class="box__title__section">
+                    <img src="./assets//svg//storage_tank.svg" alt="storage tank" class="box__icon">
+                    <p class="box__title">Total Fuel Supply</p>
+                </div>
+                <p class="box__value">10000.0000</p>
+                <div class="box__info">
+                    <div>New Rewards per block</div>
+                    <div>200 FUEL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jerrycans__wrapper" id="fuels">
+        <div class="jerrycan__container">
+            <img src="./assets//svg//green_jerrycan.svg" alt="green jerrycan" class="jerrycan__icon">
+
+            <div class="crypto__title">
+                Deposit FUEL-ETH SLP
+            </div>
+            <div class="crypto__title_2">
+                EARN FUEL
+            </div>
+
+            <button class="select__button">
+                <img src="./assets//svg//click.svg" alt="click" class="click__icon">
+                <div class="select__button__text">select</div>
+            </button>
+        </div>
+
+        <div class="jerrycan__container">
+            <img src="./assets//svg//purple_jerrycan.svg" alt="purple jerrycan" class="jerrycan__icon">
+
+            <div class="crypto__title">
+                Deposit MEME-ETH SLP
+            </div>
+            <div class="crypto__title_2">
+                EARN FUEL
+            </div>
+
+            <button class="select__button">
+                <img src="./assets//svg//click.svg" alt="click" class="click__icon">
+
+                <div class="select__button__text">select</div>
+
+            </button>
+        </div>
+
+
+        <div class="jerrycan__container">
+            <img src="./assets//svg//blue_jerrycan.svg" alt="blue jerrycan" class="jerrycan__icon">
+            <div class="crypto__title">
+                Deposit BAND-ETH SLP
+            </div>
+            <div class="crypto__title_2">
+                EARN FUEL
+            </div>
+
+            <button class="select__button">
+                <img src="./assets//svg//click.svg" alt="click" class="click__icon">
+                <div class="select__button__text">select</div>
+            </button>
+        </div>
+    </div>
+    <h2 class="socials__heading" id="socials">
+        Find Us
+        <img src="./assets//svg//socials.svg" alt="socials icon">
+    </h2>
+    <div class="socials__wrapper">
+        <a href="#" class="social__item" target="_blank">
+            <img src="./assets//svg//twitter.svg" alt="Twitter">
+            Twitter
+        </a>
+        <a href="#" class="social__item" target="_blank">
+            <img src="./assets//svg//telegram.svg" alt="Telegram">
+            Telegram
+        </a>
+        <a href="#" class="social__item" target="_blank">
+            <img src="./assets//svg//medium.svg" alt="Medium">
+            Medium
+        </a>
+    </div>
+    <div class="background">
+
+    </div>
+
+    <div class="login__modal">
+        Connect Your Wallet
+        <img src="./assets//svg/metamask-fox.svg" alt="metamask">
+        <button class="connect unlock__button ">Connect</button>
+        <button class="cancel__button ">cancel</button>
+
+    </div>
+    <script>
+        const modal = document.querySelector(".login__modal")
+        const unlockButton = document.querySelector(".unlock__button")
+        const cancelButton = document.querySelector(".cancel__button")
+        const background = document.querySelector(".background")
+
+        unlockButton.addEventListener("click", () => {
+            modal.classList.add("login__modal--active")
+            background.classList.add("background--active")
+
+        })
+
+        cancelButton.addEventListener("click", () => {
+            modal.classList.remove("login__modal--active")
+            background.classList.remove("background--active")
+
+        })
+        background.addEventListener("click", () => {
+            modal.classList.remove("login__modal--active")
+            background.classList.remove("background--active")
+        })
+        window.addEventListener('scroll', () => {
+            document.querySelector(".header").classList.toggle('sticky', window.scrollY > 100);
+        })
+    </script>
+
+</body>
+
+</html>

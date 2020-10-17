@@ -6,6 +6,8 @@ Diamond Miner - https://diamondminer.netlify.app/
 
 Rainbow Swap - https://rainbowswap.netlify.app/
 
+Biohazard Swap - https://biohazardswap.netlify.app/
+
 All designed and developed by me.
 
 

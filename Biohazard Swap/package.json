@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "netlify": "^4.8.0",
+    "netlify-cli": "^2.65.0",
+    "node": "^14.13.1",
+    "sass": "^1.26.12"
+  }
+}

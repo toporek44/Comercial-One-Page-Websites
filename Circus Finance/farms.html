@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./assets//svg//logo.svg" />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+
+    <title>Beetles Finance</title>
+</head>
+
+<body>
+
+    <div class="header_bg">
+        <header class="header">
+
+            <a href="index.html" class="logo">
+
+                <img src="assets/svg/logo.svg" alt="Circus Finance Logo">
+                <span>Circus Finance</span>
+            </a>
+            <div class="navigation">
+                <a href="farms.html" class="nav__item">Attraciton</a>
+                <button class="unlock__button ">unlock now</button>
+            </div>
+        </header>
+    </div>
+
+    <h2 class="attraction__heading">Select YOur attraction and have some laught</h2>
+    <h3 class="select__tip">click card to select <img src="assets/svg//pick.svg" alt="pick"> </h3>
+    <div class="cards__wrapper">
+
+        <div class="card">
+            <div class="white__rect">
+
+            </div>
+
+            <div class="red__rect">
+                <img src="./assets//svg//elephant.svg" alt="elephant" class="card__image">
+                <div class="rect__container">
+                    <img src="assets/svg//deposit.svg" alt="" class="deposit">
+                </div>
+
+                <div class="swap__values">
+                    CRC - ETH
+                </div>
+                <div class="rect__container">
+                    <img src="assets/svg//earn.svg" alt="" class="earn">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="white__rect">
+
+            </div>
+
+            <div class="red__rect">
+                <img src="./assets//svg//cannon.svg" alt="cannon" class="card__image">
+                <div class="rect__container">
+                    <img src="assets/svg//deposit.svg" alt="" class="deposit">
+                </div>
+
+                <div class="swap__values">
+                    CRC - ETH
+                </div>
+                <div class="rect__container">
+                    <img src="assets/svg//earn.svg" alt="" class="earn">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="white__rect">
+
+            </div>
+
+            <div class="red__rect">
+                <img src="./assets//svg//gymnastic.svg" alt="gymnastic" class="card__image">
+                <div class="rect__container">
+                    <img src="assets/svg//deposit.svg" alt="" class="deposit">
+                </div>
+
+                <div class="swap__values">
+                    CRC - ETH
+                </div>
+                <div class="rect__container">
+                    <img src="assets/svg//earn.svg" alt="" class="earn">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="white__rect">
+
+            </div>
+
+            <div class="red__rect">
+                <img src="./assets//svg//juggling.svg" alt="juggling" class="card__image">
+                <div class="rect__container">
+                    <img src="assets/svg//deposit.svg" alt="" class="deposit">
+                </div>
+
+                <div class="swap__values">
+                    CRC - ETH
+                </div>
+                <div class="rect__container">
+                    <img src="assets/svg//earn.svg" alt="" class="earn">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="white__rect">
+
+            </div>
+
+            <div class="red__rect">
+                <img src="./assets//svg//seal.svg" alt="seal" class="card__image">
+                <div class="rect__container">
+                    <img src="assets/svg//deposit.svg" alt="" class="deposit">
+                </div>
+
+                <div class="swap__values">
+                    CRC - ETH
+                </div>
+                <div class="rect__container">
+                    <img src="assets/svg//earn.svg" alt="" class="earn">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="white__rect">
+
+            </div>
+
+            <div class="red__rect">
+                <img src="./assets//svg//clown.svg" alt="clown" class="card__image">
+                <div class="rect__container">
+                    <img src="assets/svg//deposit.svg" alt="" class="deposit">
+                </div>
+
+                <div class="swap__values">
+                    CRC - ETH
+                </div>
+                <div class="rect__container">
+                    <img src="assets/svg//earn.svg" alt="" class="earn">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="social__wrapper">
+        <a href="" class="social__item"><img src="./assets//svg//twitter.svg" alt="twitter">Twitter </a>
+        <a href="" class="social__item"><img src="./assets//svg//medium.svg" alt="medium">Medium </a>
+        <a href="" class="social__item"><img src="./assets//svg//telegram.svg" alt="telegram">Telegram </a>
+    </div>
+
+    <div class="background">
+    </div>
+    <div class="login__modal">
+        Connect Your Wallet
+        <img src="./assets//svg/metamask-fox.svg" alt="metamask">
+        <button class="connect">
+            Connect
+        </button>
+        <button class="cancel__button ">cancel</button>
+    </div>
+    <footer>All Rights Reserved &#9426; 2020</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="bundle.js" defer></script>
+    <!-- <script>
+        const modal = document.querySelector(".login__modal");
+        const unlockButtons = document.querySelectorAll(".unlock__button");
+        const cancelButton = document.querySelector(".cancel__button");
+        const background = document.querySelector(".background");
+
+        unlockButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                modal.classList.add("login__modal--active");
+                background.classList.add("background--active");
+            });
+        });
+        cancelButton.addEventListener("click", () => {
+            modal.classList.remove("login__modal--active");
+            background.classList.remove("background--active");
+        });
+
+        background.addEventListener("click", () => {
+            modal.classList.remove("login__modal--active");
+            background.classList.remove("background--active");
+        });
+    </script> -->
+
+</body>
+
+</html>

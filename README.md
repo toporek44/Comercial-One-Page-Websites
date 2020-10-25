@@ -8,6 +8,8 @@ Rainbow Swap - https://rainbowswap.netlify.app/
 
 Biohazard Swap - https://biohazardswap.netlify.app/
 
+Circus Finance - https://circusfinance.netlify.app/
+
 All designed and developed by me.
 
 

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="assets/svg/logo.svg" />
+    <link rel="stylesheet" href="Butcher the Baker.otf" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>DarkSwap Finance</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="farms.html" class="nav__item">cementary</a>
+        <button class="unlock__button ">unlock now</button>
+    </header>
+
+
+    <div class="heading">
+
+        <div class="torch">
+            <div class="logo">
+                <span>Dark</span>
+                <img src="assets/svg/logo_2.svg" alt="Circus Finance Logo">
+                <span>swap</span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <section class="content">
+        <div class="smoke__wrapper">
+            <img src="assets/svg/cloud.png" alt="red smoke" class="smoke">
+            <div class="smoke__container">
+                <h2 class="smoke__container__title">It’s time to face with <span> the DaRK</span> </h2>
+                <div class="total__tokens__container">
+                    <div class="total__tokens">
+                        total tokens
+                        <p>30000.0000</p>
+                    </div>
+                    <div class="total__tokens">
+                        Circulating Tokens
+                        <p>6000.0000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ghost__container">
+            <p class="ghost__title">Take risk and come into <span>cemetery</span></p>
+            <img src="assets/svg/ghost.png" alt="" class="ghost">
+
+        </div>
+
+        <div class="social__wrapper">
+            <a href="" class="social__item"><img src="./assets//svg//twitter.svg" alt="twitter">Twitter </a>
+            <a href="" class="social__item"><img src="./assets//svg//medium.svg" alt="medium">Medium </a>
+            <a href="" class="social__item"><img src="./assets//svg//telegram.svg" alt="telegram">Telegram </a>
+        </div>
+    </section>
+
+
+
+
+    <footer>All Rights Reserved &#9426; 2020</footer>
+
+    <div class="background">
+    </div>
+    <div class="login__modal">
+        Connect Your Wallet
+        <img src="./assets//svg/metamask-fox.svg" alt="metamask">
+        <button class="connect">
+            Connect
+        </button>
+        <button class="cancel__button ">cancel</button>
+    </div>
+
+
+    <script src="bundle.js"></script>
+
+    <script>
+        const torch = document.querySelector(".torch");
+        const bg = document.querySelector(".heading");
+
+        function moveTorch(e) {
+            let x = e.clientX || e.touches[0].clientX
+            let y = e.clientY || e.touches[0].clientY
+
+
+
+
+            torch.style.background = "none";
+            torch.style.backgroundImage = `radial-gradient(circle closest-corner at ${x}px ${y}px
+                , rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 30%)`;
+        }
+
+        bg.addEventListener("mousemove", moveTorch)
+        bg.addEventListener("touchmove", moveTorch)
+    </script>
+
+</body>
+
+</html>

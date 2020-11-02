@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./assets//svg//logo.svg" />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+
+    <title>Darkswap Finance</title>
+</head>
+
+<body>
+
+    <header class="header__cementary">
+
+
+        <a href="index.html" class="nav__item__cementary"><img src="assets/svg/arrow.svg" alt=""> go back</a>
+        <a href="index.html" class="logo__cementary">
+            <span>Dark</span>
+            <img src="assets/svg/logo_2.svg" alt="Circus Finance Logo">
+            <span>swap</span>
+        </a>
+        <button class="unlock__button__cementary ">unlock now</button>
+
+        <div class="navigation">
+            <a href="index.html" class="nav__item">go back</a>
+            <button class="unlock__button ">unlock now</button>
+        </div>
+    </header>
+
+
+
+
+
+    <h2 class="cementary__heading">Deposit one of theese pairs and earn drk</h2>
+    <div class="cards__wrapper">
+
+        <div class="card">
+            <div class="card__details">deposit DRK - ETH UNI-V2 LP earn DRK</div>
+            <img src="assets/svg/card_1.png" alt="">
+            <a href="" class="card__select">select</a>
+        </div>
+        <div class="card">
+            <div class="card__details">deposit BTC - ETH UNI-V2 LP earn DRK</div>
+            <img src="assets/svg/card_2.png" alt="">
+            <a href="" class="card__select">select</a>
+        </div>
+
+        <div class="card">
+            <div class="card__details">deposit USDC - ETH UNI-V2 LP earn DRK</div>
+            <img src="assets/svg/card_3.png" alt="">
+            <a href="" class="card__select">select</a>
+        </div>
+
+        <div class="card">
+            <div class="card__details">deposit CORE - ETH UNI-V2 LP earn DRK</div>
+            <img src="assets/svg/card_4.png" alt="">
+            <a href="" class="card__select">select</a>
+        </div>
+
+        <div class="card">
+            <div class="card__details">deposit UNI - ETH UNI-V2 LP earn DRK</div>
+            <img src="assets/svg/card_5.png" alt="">
+            <a href="" class="card__select">select</a>
+        </div>
+
+        <div class="card">
+            <div class="card__details">deposit YFI - ETH UNI-V2 LP earn DRK</div>
+            <img src="assets/svg/card_6.png" alt="">
+            <a href="" class="card__select">select</a>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="social__wrapper">
+        <a href="" class="social__item"><img src="./assets//svg//twitter.svg" alt="twitter">Twitter </a>
+        <a href="" class="social__item"><img src="./assets//svg//medium.svg" alt="medium">Medium </a>
+        <a href="" class="social__item"><img src="./assets//svg//telegram.svg" alt="telegram">Telegram </a>
+    </div>
+
+    <div class="background">
+    </div>
+    <div class="login__modal">
+        Connect Your Wallet
+        <img src="./assets//svg/metamask-fox.svg" alt="metamask">
+        <button class="connect">
+            Connect
+        </button>
+        <button class="cancel__button ">cancel</button>
+    </div>
+    <footer>All Rights Reserved &#9426; 2020</footer>
+
+    <script src="bundle.js"></script>
+    <script>
+        const modal = document.querySelector(".login__modal");
+        const unlockButtons = document.querySelectorAll(".unlock__button__cementary");
+        const cancelButton = document.querySelector(".cancel__button");
+        const background = document.querySelector(".background");
+
+        unlockButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                modal.classList.add("login__modal--active");
+                background.classList.add("background--active");
+            });
+        });
+        cancelButton.addEventListener("click", () => {
+            modal.classList.remove("login__modal--active");
+            background.classList.remove("background--active");
+        });
+
+        background.addEventListener("click", () => {
+            modal.classList.remove("login__modal--active");
+            background.classList.remove("background--active");
+        });
+    </script>
+
+</body>
+
+</html>

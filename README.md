@@ -10,6 +10,12 @@ Biohazard Swap - https://biohazardswap.netlify.app/
 
 Circus Finance - https://circusfinance.netlify.app/
 
+DarkSwap Finance - https://darkswap.netlify.app/
+
+Tetris Finance - https://tetrisfinance.netlify.app/
+
+Arabica Finance - https://arabicafinance.netlify.app/
+
 All designed and developed by me.
 
 

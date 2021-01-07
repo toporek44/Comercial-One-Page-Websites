@@ -18,7 +18,7 @@ Arabica Finance - https://arabicafinance.netlify.app/
 
 All designed and developed by me.
 
-This pages are without code in repo, because it is a comercial code.
+This pages are without code in repo, but also developed by me.
 
 Elite Chain - https://elitechain.netlify.app/  // Worth seeing
 

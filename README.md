@@ -7,6 +7,8 @@ Live Demos :
 
 ElonTheDog - https://elonthedog.netlify.app/
 
+AlphaDAO - https://alphadao.netlify.app/
+
 BSC Launc - https://bsclaunch.netlify.app/
 
 Metropolis Finacne - https://metropolisfinance.netlify.app/
@@ -47,7 +49,7 @@ GrowBase - https://growbase.netlify.app/
 
 Phoenix Dao - https://phoenixfinance.netlify.app/
 
-Poker Finance - https://pokerfinance.netlify.app/ 
+
 
 
 
